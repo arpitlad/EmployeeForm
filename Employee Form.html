@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms using tables</title>
+    <style>
+        body {
+            background-color: #60a9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+        
+        .panel {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 25px;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 0px auto;
+        }
+        
+        .Register {
+            text-decoration: none;
+            border: 1px solid #9dd1ff;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px 100px 10px 100px;
+            background-color: #48aaff;
+            color: white;
+            transition: background-color 200ms ease-in-out;
+        }
+        
+        .Register:hover,
+        .Register:focus {
+            background-color: #269aff;
+            color: white
+        }
+        
+        input {
+            font-family: sans-serif, cursive;
+            width: 270px;
+            padding: 6px 12px;
+            border: 1px solid #a3c1ad;
+            margin: 11px auto;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        
+        .radioinput {
+            width: 25px;
+            text-align: left;
+        }
+        
+        select {
+            padding: 6px 12px;
+            width: 295px;
+            border: 1px solid #a3c1ad;
+            margin: 11px auto;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 28px;
+            color: #2a9d8f;
+        }
+        
+        #firstname {
+            margin: 20px;
+        }
+        
+        #email {
+            margin: 20px;
+        }
+        
+        #lastname {
+            margin: 20px;
+        }
+        
+        #phone {
+            margin: 20px;
+        }
+        
+        #password {
+            margin: 20px;
+        }
+        
+        #security {
+            margin: 20px;
+        }
+        
+        #answer {
+            margin: 20px;
+        }
+        
+        #register {
+            margin: 20px;
+        }
+        
+        #gender {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <h1>Apply as a Employee</h1>
+        <form action="mailto:arpitlaad.lad@gmail.com" method="POST" enctype="text/plain">
+            <table>
+                <tr>
+                    <td><input type="text" id="firstname" name="firstname" placeholder="First Name"></td>
+                    <td><input type="email" id="email" name="email" placeholder="Your Email"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="lastname" name="lastname" placeholder="Last Name"></td>
+                    <td><input type="text" id="phone" name="phone" placeholder="Your Phone"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password" name="password" placeholder="Password" minlength="8"></td>
+                    <td><select name="security" id="security">
+                    <option value="--Please select your Security Question--" selected>--Please select your Security Question--</option>
+                    <option value="What is your Birthdate?">What is your Birthdate?</option>
+                    <option value="What is your Old Phone Number?">What is your Old Phone Number?</option>
+                    <option value="What is your Pet Name?">What is your Pet Name?</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password" name="password" placeholder="Confirm Password" minlength="8"></td>
+                    <td><input type="text" id="answer" name="answer" placeholder="Enter your Answer"></td>
+                </tr>
+                <tr>
+                    <td id="gender"><input type="radio" id="male" class="radioinput" name="gender" value="Male"><span>Male</span>
+                        <input type="radio" id="female" class="radioinput" name="gender" value="Female"><span>Female</span></td>
+                    <td><button class="Register">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
